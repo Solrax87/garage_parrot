@@ -6,6 +6,7 @@
         @content;
     }
 }
+
 @mixin tablet {
     @media (min-width: v.$tablet) {
         @content;
