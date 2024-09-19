@@ -7,22 +7,15 @@ $username = "garage-parrot";      // Usuario de la base de datos
 $password = "cl2s3vCRZ)-By16S1-"; // Contraseña de la base de datos 
 $dbname = "garage_parrot";         // Asegúrate de reemplazar esto con el nombre real de tu base de datos
 
-// Crear la conexión
-$db = mysqli_connect($servername, $username, $password, $dbname);
 
-// Verificar la conexión
-if (!$db) {
-    die("Pas connecté: " . mysqli_connect_error());
+
+function conectBD() : mysqli {
+    $db = mysqli_connect($servername, $username, $password, $dbname);
+
+    if(!$db) {
+        echo "Pas connecté";
+        exit;
+    }
+
+    return $db;
 }
-
-
-// function conectBD() : mysqli {
-//     $db = mysqli_connect('localhost', 'root', '', 'garage_parrot');
-
-//     if(!$db) {
-//         echo "Pas connecté";
-//         exit;
-//     }
-
-//     return $db;
-// }
