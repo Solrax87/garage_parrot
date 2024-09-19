@@ -2,7 +2,7 @@
 // Configuración de conexión a la base de datos
 $servername = "nue.domcloud.co";  
 $username = "garage-parrot";      
-$password = "cl2s3vCRZ)-By16S1-"; 
+$password = "K352Ybjo)hAV2aS-_4"; 
 $dbname = "garage_parrot_db";         
 
 function conectBD() : mysqli {
