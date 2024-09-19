@@ -1,19 +1,17 @@
 <?php
-
-
 // Configuración de conexión a la base de datos
-$servername = "nue.domcloud.co";  // O "89.58.31.246" si prefieres usar la IP
-$username = "garage-parrot";      // Usuario de la base de datos
-$password = "cl2s3vCRZ)-By16S1-"; // Contraseña de la base de datos 
-$dbname = "garage_parrot";         // Asegúrate de reemplazar esto con el nombre real de tu base de datos
-
-
+$servername = "nue.domcloud.co";  
+$username = "garage-parrot";      
+$password = "cl2s3vCRZ)-By16S1-"; 
+$dbname = "garage_parrot_db";         
 
 function conectBD() : mysqli {
+    global $servername, $username, $password, $dbname; // Declara las variables como globales
+
     $db = mysqli_connect($servername, $username, $password, $dbname);
 
-    if(!$db) {
-        echo "Pas connecté";
+    if (!$db) {
+        echo "Pas connecté: " . mysqli_connect_error();
         exit;
     }
 
