@@ -261,9 +261,12 @@
             }
         }
     }
-    
+
+
     // Header
+
     incluTemplates('header');
+
 ?>
 
 <main class="container section">

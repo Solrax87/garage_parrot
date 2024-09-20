@@ -1,7 +1,7 @@
 <?php 
 
     require 'includes/functions.php';
-    $limite = isset($limite) ? $limite : 9; 
+
     incluTemplates('header');
 
     
