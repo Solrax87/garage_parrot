@@ -2,6 +2,12 @@
 // Importación de conexión
 require __DIR__ . '/../config/database.php'; 
 $db = conectBD();
+if (!$db) {
+    echo "Error en la conexión: " . mysqli_connect_error();
+} else {
+    echo "Conexión exitosa";
+}
+
 
 // Definir límite (si no está definido)
 $limite = isset($limite) ? $limite : 9; 
@@ -39,4 +45,5 @@ if (mysqli_num_rows($resultat) > 0) {
 } else {
     echo "Aucun véhicule trouvé.";
 }
+
 ?>
