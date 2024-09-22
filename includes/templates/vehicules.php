@@ -10,8 +10,8 @@
     
 
         // Obtención de parámetros de filtro
-        // $minPrice = isset($_GET['prix_min']) ? $_GET['prix_min'] : 0;
-        // $maxPrice = isset($_GET['prix_max']) ? $_GET['prix_max'] : 1000000;
+        $minPrice = isset($_GET['prix_min']) ? $_GET['prix_min'] : 0;
+        $maxPrice = isset($_GET['prix_max']) ? $_GET['prix_max'] : 1000000;
 
          // Si se proporcionan parámetros de filtro, construir la consulta filtrada
         if ($minPrice !== 0 || $maxPrice !== 1000000) {
