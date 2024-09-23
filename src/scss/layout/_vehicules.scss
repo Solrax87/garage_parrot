@@ -1,7 +1,7 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-.filtre-form {
+.formFilter {
     font-weight: bold;
     text-transform: uppercase;
 
@@ -17,8 +17,5 @@
         margin: 1rem;
         display: flex;
         flex-direction: row;
-        
     }
-
-    
 }
