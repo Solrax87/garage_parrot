@@ -19,15 +19,12 @@
       header('location: /');
     }
 
-    $option2 = 
-
     /* Header */
     require 'includes/functions.php';
 
     incluTemplates('header');
 
 ?>
-
 
 <section class="container section-voiture">
   <?php while($vehicule = mysqli_fetch_assoc($resultat)): ?>
@@ -37,8 +34,6 @@
             <img id="largeImage" src="/images/<?php echo $vehicule['image1']; ?>" alt="Image voiture">
         </div>
 
-         
-        
         <div class="Explicacion">
 
             <!-- Petite galérie -->
