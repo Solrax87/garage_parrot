@@ -33,6 +33,7 @@ function images(done) {
 }
 
 function css(done) {
+    console.log("Compilando SCSS...");
     src("src/scss/**/*.scss")
         .pipe(plumber())
         .pipe(sass())

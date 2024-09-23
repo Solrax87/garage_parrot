@@ -357,7 +357,7 @@ p {
 }
 
 .header {
-  background-color: rgb(126, 124, 124);
+  background-color: red;
 }
 .header img {
   width: 12rem;
