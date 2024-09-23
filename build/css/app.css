@@ -876,6 +876,9 @@ h2 {
   display: flex;
   flex-direction: row;
 }
+.formFilter .formFilter {
+  background: red;
+}
 
 /* esconde elemento para moviles */
 @media only screen and (max-width: 768px) {
