@@ -46,8 +46,13 @@
         $query .= " AND prix BETWEEN $minPrice AND $maxPrice";
     }
 
-    // Limitar los resultados
-    $query .= " LIMIT 12";
+     // Verificar si existe una variable de límite, si no existe, asignar un valor por defecto
+     if (isset($limite)) {
+        $query .= " LIMIT $limite";
+    } else {
+        // Si no se especifica límite, mostrar todos los vehículos
+        $query .= " LIMIT 12"; // O cualquier número adecuado para tu caso
+    }
 
     // Ejecución de la consulta y manejo de errores
     $resultat = mysqli_query($db, $query);

@@ -7,7 +7,7 @@
     <h1>Véhicules d'occasion</h1>
 
     <!-- Formulario de filtro por coche -->
-    <form id="filterForm">
+    <form id="filterForm" class="formulaire">
         <label for="marque">Marque</label>
         <input type="text" id="marque" name="marque">
 
