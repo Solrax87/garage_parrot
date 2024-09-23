@@ -7,7 +7,6 @@
     }
     
     //Importation de connéxion
-    //require __DIR__ . '/includes/config/database.php'; 
     require 'includes/config/database.php';    //Cualquiera de la dos opciones es valida
     $db = conectBD();
     // Consultation
@@ -21,9 +20,7 @@
 
     /* Header */
     require 'includes/functions.php';
-
     incluTemplates('header');
-
 ?>
 
 <section class="container section-voiture">
