@@ -1,13 +1,11 @@
 <?php
     // Importation de connéxion
     require __DIR__ . '/../config/database.php'; 
-    //require 'includes/config/database.php'; //Cualquiera de la dos opciones es valida
     $db = conectBD();
 
     // Consultation
     $query = "SELECT * FROM vehicules LIMIT {$limite}";
     // $query_temoignages = "SELECT * FROM temoignages LIMIT 6";
-    
 
         // Obtención de parámetros de filtro
         $minPrice = isset($_GET['prix_min']) ? $_GET['prix_min'] : 0;
@@ -21,19 +19,11 @@
     // obtention des resultats
     $resultat = mysqli_query($db, $query);
     
-
-    /** Espace pour temoignages */
-
-    // Array message erreur
-    
-
     // echo "<pre>";
     // var_dump($query);
     // echo "</pre>";
 
 ?>
-
-
     <div class="all-publicite">
         
         <?php while($vehicule = mysqli_fetch_assoc($resultat)): ?>
@@ -54,9 +44,6 @@
             </div><!--.container-publicite-->
         </div><!--.publicite-->
         <?php endwhile; ?>
-    </div>
-
-    </section>
     
     <!-- Section Témoignages -->
 

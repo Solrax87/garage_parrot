@@ -56,7 +56,9 @@
             include 'includes/templates/vehicules.php'; 
         ?>
         <!-- Bouton lien véhicules -->
-        <a class="btn-green-centrer" href="vehicules.php">Voir plus</a>
+        </div>
+            <a class="btn-green-centrer" href="vehicules.php">Voir plus</a>
+    </section>
     
     <!-- TEMOIGNAGES -->
     <article>
