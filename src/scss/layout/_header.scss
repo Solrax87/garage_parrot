@@ -2,7 +2,7 @@
 @use 'base/mixins' as m;
 
 .header {
-    background-color: red;
+    background-color: v.$grey;
 
     img {
         width: 12rem;

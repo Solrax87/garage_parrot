@@ -28,9 +28,6 @@
     margin: 4rem;
     border: 2px solid darken(v.$grey, 10);
 
-    .formFilter {
-        display: flex;
-    }
 
 
     .formulaire-temoins label {
@@ -50,7 +47,7 @@
     }
     button {
         padding: 10px 20px;
-        background-color: #e94ac7;
+        background-color: #007bff;
         color: white;
         border: none;
         border-radius: 5px;
