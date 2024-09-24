@@ -357,7 +357,7 @@ p {
 }
 
 .header {
-  background-color: red;
+  background-color: rgb(197, 12, 12);
 }
 .header img {
   width: 12rem;
@@ -669,9 +669,6 @@ h2 {
   margin: 4rem;
   border: 2px solid #646363;
 }
-.formulaire .formFilter {
-  display: flex;
-}
 .formulaire .formulaire-temoins label {
   font-weight: bold;
 }
@@ -689,7 +686,7 @@ h2 {
 }
 .formulaire button {
   padding: 10px 20px;
-  background-color: #e94ac7;
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
@@ -836,22 +833,14 @@ h2 {
   margin-right: 1rem;
 }
 
-#largeImage {
-  transition: opacity 0.5s ease-in-out;
-}
-
-.fade {
-  opacity: 0.5;
-}
-
-.formFilter {
+.filtre-form {
   font-weight: bold;
   text-transform: uppercase;
 }
-.formFilter .btn-filtre {
+.filtre-form .btn-filtre {
   margin-top: 2rem;
 }
-.formFilter .btn-red {
+.filtre-form .btn-red {
   background-color: rgb(172, 19, 19);
   color: rgb(255, 255, 255);
   font-weight: bold;
@@ -867,17 +856,14 @@ h2 {
   width: auto;
   margin-left: 2rem;
 }
-.formFilter .btn-red:hover {
+.filtre-form .btn-red:hover {
   background-color: #d3ac00;
   cursor: pointer;
 }
-.formFilter .btns {
+.filtre-form .btns {
   margin: 1rem;
   display: flex;
   flex-direction: row;
-}
-.formFilter .formFilter {
-  background: red;
 }
 
 /* esconde elemento para moviles */
