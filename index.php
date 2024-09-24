@@ -8,6 +8,7 @@
     <!-- Image et titre -->
     <section class="bg-voiture">
         <h1>Garage V. Parrot</h1>
+        
     </section>
 
     <!-- Intro Garage V. Parrot -->

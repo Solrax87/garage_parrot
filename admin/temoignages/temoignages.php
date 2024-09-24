@@ -16,19 +16,16 @@ $resultat = $_GET['resultat'] ?? null;
     // Consultation de BD
     $resultat = mysqli_query($db, $query);
 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if($_SERVER['REQUEST_METHOD'] === 'POST') {
         $id = $_POST['id'];
         $id = filter_var($id, FILTER_VALIDATE_INT);
-    
-        if ($id) {
+
+        if($id) {
             $query = "DELETE FROM temoignages WHERE id = {$id}";
-            $result = mysqli_query($db, $query);
-    
-            if ($result) {
-                // Establecer variable de sesión para indicar éxito
-                $_SESSION['temoignage_deleted'] = true;
-                header('Location: temoignages.php');
-                exit;
+            $resultat = mysqli_query($db, $query);
+
+            if($resultat) {
+                header('Location: /admin/propietaire/administrateur.php');
             }
         }
     }
@@ -57,9 +54,8 @@ $resultat = $_GET['resultat'] ?? null;
 
 </div>
 <section class="container">
-    <?php if (isset($_SESSION['temoignage_deleted'])): ?>
+    <?php if(intval($resultat === 1)):  ?>
         <p class="alerte succes">Témoignage Effacé</p>
-        <?php unset($_SESSION['temoignage_deleted']); ?> <!-- Limpiar variable de sesión -->
     <?php endif; ?>
     <div>
         <p class="text-importante">* Supprimer toujours le premier de la liste pour que les nouveaux messages soient reflétés sur la page principale.</p>
